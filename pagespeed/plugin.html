@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>PageSpeed Coach | Experience Workspace</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./plugin.css">
+  <script type="module" src="./plugin.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header"><div><p class="eyebrow">GOOGLE PAGESPEED INSIGHTS</p><h1>PageSpeed Coach</h1><p class="muted">Find performance issues you can act on.</p></div><span class="logo" aria-hidden="true">⚡</span></header>
+    <section class="panel">
+      <label for="page-url">Published page URL</label>
+      <input id="page-url" type="url" placeholder="https://www.example.com/page" autocomplete="url" spellcheck="false">
+      <p class="hint" id="context-hint">Detecting current page from Experience Workspace…</p>
+      <div class="controls"><label class="field">Device<select id="device"><option value="mobile">Mobile</option><option value="desktop">Desktop</option></select></label><button id="analyze" type="button">Analyze page</button></div>
+      <details class="settings" id="api-settings">
+        <summary>Google API key</summary>
+        <label for="api-key">PageSpeed Insights API key</label>
+        <div class="key-row"><input id="api-key" type="password" placeholder="Paste your Google API key" autocomplete="off" autocapitalize="off" spellcheck="false"><button id="toggle-key" class="secondary" type="button" aria-label="Show API key">Show</button></div>
+        <button id="clear-key" class="secondary" type="button">Clear key</button>
+      </details>
+    </section>
+    <div id="status" class="status" role="status" aria-live="polite">Ready to analyze a published page.</div>
+    <section id="fallback" class="panel fallback" hidden><strong>Google API unavailable?</strong><p class="hint">You can run the same page through Google’s free interactive website. Its results cannot be imported automatically into this plugin.</p><a id="fallback-link" href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Analyze on pagespeed.web.dev ↗</a></section>
+    <section id="results" hidden>
+      <div class="section-heading"><h2>Audit results</h2><span id="audited-at" class="muted"></span></div>
+      <div class="scores" id="scores"></div>
+      <div class="metrics" id="metrics"></div>
+      <p class="hint">Scores and LCP/CLS shown here are Lighthouse lab measurements. INP is shown only when field data is available.</p>
+      <div class="section-heading"><h2>What to fix</h2><span class="muted" id="issue-count"></span></div>
+      <div class="tabs" role="tablist" aria-label="Issue ownership"><button class="tab active" data-filter="author" role="tab" aria-selected="true">For authors</button><button class="tab" data-filter="developer" role="tab" aria-selected="false">For developers</button></div>
+      <div id="issues" class="issues"></div>
+      <div class="actions"><button class="secondary" id="save-baseline">Save as baseline</button><button class="secondary" id="compare">Compare to baseline</button><a id="psi-link" target="_blank" rel="noopener noreferrer">Full PSI report ↗</a></div>
+      <div id="comparison" class="comparison" hidden></div>
+    </section>
+    <footer>Powered by Google PageSpeed Insights · Independent third-party integration</footer>
+  </main>
+</body>
+</html>
