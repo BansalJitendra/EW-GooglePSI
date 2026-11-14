@@ -1,6 +1,6 @@
-# Google PageSpeed Insights
+# Google PageSpeed Insights (PageSpeed Coach)
 
-Experience Workspace plugin using Google's PageSpeed Insights API that shows current page scores to content authors within the authoring panel. Automatically fetches the published URL of the current page and generates the performance report. Bonus: Provides recommendations for content authors to fix the issues impacting page performance. 
+Integrate Google PageSpeed Insights into Experience Workspace to help content authors analyze page performance, identify optimization opportunities, and improve user experience without leaving the authoring environment.
 
 <img width="492" height="786" alt="pagespeed" src="https://github.com/user-attachments/assets/f5972b08-71d9-4b0e-8a85-93e27b7b15f3" />
 
