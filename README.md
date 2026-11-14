@@ -2,6 +2,9 @@
 
 Experience Workspace plugin using Google's PageSpeed Insights API with an optional user-provided API key.
 
+<img width="492" height="786" alt="pagespeed" src="https://github.com/user-attachments/assets/f5972b08-71d9-4b0e-8a85-93e27b7b15f3" />
+
+
 ## Plugin files
 
 - `pagespeed/plugin.html`
