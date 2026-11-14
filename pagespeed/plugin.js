@@ -114,7 +114,7 @@ async function analyze() {
     if (!response.ok || data.error) {
       const message = data.error?.message || `HTTP ${response.status}`;
       if (response.status === 429 || /quota exceeded|queries per day|rate limit|resource exhausted/i.test(message)) {
-        throw new Error(apiKey ? 'Google rejected the request due to the API project quota. Check the PageSpeed Insights API quota and restrictions for your key. Repeated clicks will not bypass the limit.' : 'Google’s keyless PageSpeed API quota is exhausted (possibly set to zero). Add your own API key under Google API key (optional), or use the free Google website below.');
+        throw new Error(apiKey ? 'Google rejected the request due to the API project quota. Check the PageSpeed Insights API quota and restrictions for your key. Repeated clicks will not bypass the limit.' : 'Google’s keyless PageSpeed API quota is exhausted (possibly set to zero). Add your own API key under Google API key, or use the free Google website below.');
       }
       if (apiKey && (response.status === 400 || response.status === 403) && /api key|api_key|credential|permission|access not configured|not enabled|referer|referrer|blocked/i.test(message)) throw new Error('Google rejected the API key. Confirm that the PageSpeed Insights API is enabled and the key restrictions allow requests from this plugin host. Google says: ' + message);
       throw new Error(`Google PageSpeed API: ${message}`);
