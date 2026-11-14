@@ -4,11 +4,11 @@ Experience Workspace plugin using Google's PageSpeed Insights API with an option
 
 ## Plugin files
 
-- `plugin.html`
-- `plugin.css`
-- `plugin.js`
+- `pagespeed/plugin.html`
+- `pagespeed/plugin.css`
+- `pagespeed/plugin.js`
 
-Upload/host all three in the same folder and configure Experience Workspace to open the full HTTPS URL of `plugin.html`. No backend or Worker is needed. Users may supply their own Google API key.
+Upload/host all three files from the `pagespeed/` folder in the same folder and configure Experience Workspace to open the full HTTPS URL of `plugin.html`. No backend or Worker is needed. Users may supply their own Google API key.
 
 ## Author workflow
 
@@ -20,7 +20,7 @@ Upload/host all three in the same folder and configure Experience Workspace to o
 
 ## Test checklist
 
-1. Confirm `plugin.html`, `plugin.css`, `plugin.js` each load with HTTP 200.
+1. Confirm `pagespeed/plugin.html`, `pagespeed/plugin.css`, `pagespeed/plugin.js` each load with HTTP 200.
 2. Check the Network tab for a request to `www.googleapis.com/pagespeedonline/v5/runPagespeed` with a `key` parameter when the API key field is populated.
 3. If successful, run again and confirm the cached result displays without a second network call.
 4. Wait for the cache to expire before verifying a new request for the same URL and device.
