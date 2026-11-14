@@ -1,6 +1,6 @@
 # Google PageSpeed Insights (PageSpeed Coach)
 
-Integrate Google PageSpeed Insights into Experience Workspace to help content authors analyze page performance, identify optimization opportunities, and improve user experience without leaving the authoring environment.
+Integrate Google PageSpeed Insights into Experience Workspace to help content authors analyze page performance, identify optimization opportunities, and improve user experience without leaving the authoring environment. Compare the baseline and new scores before and after improvements. 
 
 <img width="492" height="786" alt="pagespeed" src="https://github.com/user-attachments/assets/f5972b08-71d9-4b0e-8a85-93e27b7b15f3" />
 
@@ -16,7 +16,7 @@ Upload/host all three files from the `pagespeed/` folder in the same folder and 
 ## Author workflow
 
 1. Open a page in Experience Workspace and launch PageSpeed Coach.
-2. Verify the auto-detected published page URL (custom domains may require manual correction).
+2. Panel automatically detects the published URL. Verify the auto-detected published page URL.
 3. Choose Mobile or Desktop and click **Analyze page**.
 4. Review Lighthouse scores, author-focused recommendations, and developer issues.
 5. Save a baseline, edit and publish the page, then analyze again after the cache expires and compare.
