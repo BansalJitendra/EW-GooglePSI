@@ -1,4 +1,4 @@
-# PageSpeed Coach — Optional Google PSI API key
+# Google PageSpeed Insights
 
 Experience Workspace plugin using Google's PageSpeed Insights API with an optional user-provided API key.
 
@@ -8,7 +8,7 @@ Experience Workspace plugin using Google's PageSpeed Insights API with an option
 - `pagespeed/plugin.css`
 - `pagespeed/plugin.js`
 
-Upload/host all three files from the `pagespeed/` folder in the same folder and configure Experience Workspace to open the full HTTPS URL of `plugin.html`. No backend or Worker is needed. Users may supply their own Google API key.
+Upload/host all three files from the `pagespeed/` folder in the same folder and configure Experience Workspace to open the full HTTPS URL of `plugin.html`. No backend or Worker is needed. Users may supply their own Google API key (Optional for demo).
 
 ## Author workflow
 
@@ -29,9 +29,9 @@ Upload/host all three files from the `pagespeed/` folder in the same folder and 
 This repository is not automatically deployed or submitted to the Marketplace.
 
 
-## Create and enable a Google PageSpeed Insights API key
+## Create and enable a Google PageSpeed Insights API key (Optional for demo)
 
-These steps are for a Google Cloud account belonging to the person or organization that will operate the plugin. A Google account alone is not enough: create or select a **Google Cloud project**.
+These steps are for a Google Cloud account belonging to the person or organization that will operate the plugin.
 
 1. Open [Google Cloud Console](https://console.cloud.google.com/) and sign in.
 2. Use the project selector at the top of the page to **create a project** (for example, `PageSpeed Coach`) or select an existing project you manage.
