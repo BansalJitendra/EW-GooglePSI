@@ -11,7 +11,7 @@ Integrate Google PageSpeed Insights into Experience Workspace to help content au
 - `pagespeed/plugin.css`
 - `pagespeed/plugin.js`
 
-Upload/host all three files from the `pagespeed/` folder in the same folder and configure Experience Workspace to open the full HTTPS URL of `plugin.html`. No backend or Worker is needed. Users may supply their own Google API key (Optional for demo).
+Upload/host all three files from the `pagespeed/` folder in the same folder and configure Experience Workspace to open the full HTTPS URL of `plugin.html`. No backend or Worker is needed. Users may supply their own Google API key.
 
 ## Author workflow
 
@@ -32,7 +32,7 @@ Upload/host all three files from the `pagespeed/` folder in the same folder and 
 This repository is not automatically deployed or submitted to the Marketplace.
 
 
-## Create and enable a Google PageSpeed Insights API key (Optional for demo)
+## Create and enable a Google PageSpeed Insights API key
 
 These steps are for a Google Cloud account belonging to the person or organization that will operate the plugin.
 
